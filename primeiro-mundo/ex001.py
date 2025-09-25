@@ -1,2 +1,2 @@
 ola_mundo = 'Olá, mundo';
-print(ola_mundo)
+print(ola_mundo);
