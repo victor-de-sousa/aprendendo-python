@@ -4,6 +4,9 @@
 
 # # print("A soma entre {} e {} vale: {}".format(primeiroNumero, segundoNumero, soma));
 
+# Há como usar o .format() e também f'... texto-aqui ... {variável}';
+
+
 # numero = input('Digite um número: ');
 # print(numero.isnumeric());
 # print(numero.isalpha);
