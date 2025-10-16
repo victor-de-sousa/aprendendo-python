@@ -9,7 +9,8 @@ idadeHomem = 0;
 nomeHomem = "";
 mulherAnos = 0;
 
-for pessoa in range(0, 4):
+for pessoa in range(1, 5):
+    print(f"\n-=-=-={pessoa}º Pessoa-=-=-=\n");
     nome = str(input("Insira o nome de uma pessoa: "));
     idade = int(input("Insira a idade dessa pessoa: "));
     sexo = str(input("Insira o sexo desta pessoa: ").upper());
@@ -24,6 +25,7 @@ for pessoa in range(0, 4):
         if idade < 20:
             mulherAnos += 1;
 
-print(f"""A média de idade do grupo é: {mediaIdade/4}
-O nome do homem mais velho é: {nomeHomem}
+
+print(f"""\nA média de idade do grupo é: {mediaIdade/4}
+O nome do homem mais velho é: {nomeHomem} e ele possui {idadeHomem} anos
 A quantidade de mulheres que tem menos de 20 anos é: {mulherAnos}""");
