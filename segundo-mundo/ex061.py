@@ -12,3 +12,4 @@ while quantidadePosicoes != 10:
     termo = primeiroTermo + (quantidadePosicoes - 1) * razao;
     print(termo);
 
+print("--FIM DO PROGRAMA--")
