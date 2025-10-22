@@ -4,9 +4,18 @@ from random import randint;
 
 computador = randint(0, 10);
 
-respostaUsuario = int(input("De 0 a 10, tente acertar o número que o computador pensou: "));
+respostaUsuario = 11;
+palpites = 0;
+
 
 while respostaUsuario != computador:
-    respostaUsuario = int(input("Você errou! Tente novamente acertar o número que o computador pensou: "));
-
-print(f"Você acertouu, o número era {respostaUsuario}");
+    respostaUsuario = int(input("Tente acertar o número que o computador pensou! Insira aqui: "));
+    palpites+=1;
+    while respostaUsuario != computador:
+        if respostaUsuario < computador:
+            respostaUsuario = int(input(f"Errou, o número é maior que {respostaUsuario}!, tente novamente: "));
+        else:
+            respostaUsuario = int(input(f"Errou, o número é menor que {respostaUsuario}!, tente novamente: "));
+        palpites+=1;
+            
+print(f"Você acertou o número com {palpites} palpites!");
