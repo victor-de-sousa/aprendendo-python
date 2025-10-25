@@ -22,3 +22,30 @@
 # SAÍDA 
 
 # PROGRAMA TABUADA ENCERRADO. Volte sempre!
+
+numero = 0;
+tabuada = 0;
+vazio = '';
+
+while numero >= 0:
+
+    numero = int(input("Quer ver a tabuada de qual valor? "));
+
+    if numero < 0:
+        break;
+
+    print(f"\n{vazio:-^40}\n");
+
+    while tabuada < 10:
+        tabuada += 1;
+        print(f"{numero} x {tabuada} = {tabuada * numero}");
+        if tabuada == 10:
+            tabuada = 0;
+            break
+
+    print(f"\n{vazio:-^40}\n");
+    
+
+print("\nPROGRAMA TABUADA ENCERRADO. Volte sempre!");
+            
+
